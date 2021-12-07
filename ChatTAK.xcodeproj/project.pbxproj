@@ -14,6 +14,10 @@
 		CCDD3189275F4B55002D171F /* ChatTAK.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CCDD3187275F4B55002D171F /* ChatTAK.xcdatamodeld */; };
 		CCDD318B275F4B56002D171F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCDD318A275F4B56002D171F /* Assets.xcassets */; };
 		CCDD318E275F4B56002D171F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCDD318C275F4B56002D171F /* LaunchScreen.storyboard */; };
+		CCDD3196275F4BEC002D171F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CCDD3195275F4BEC002D171F /* GoogleService-Info.plist */; };
+		CCDD3199275F4D61002D171F /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = CCDD3198275F4D61002D171F /* FirebaseAnalytics */; };
+		CCDD319B275F4D61002D171F /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = CCDD319A275F4D61002D171F /* FirebaseAuth */; };
+		CCDD319D275F4D61002D171F /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CCDD319C275F4D61002D171F /* FirebaseFirestore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,7 @@
 		CCDD318A275F4B56002D171F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCDD318D275F4B56002D171F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CCDD318F275F4B56002D171F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCDD3195275F4BEC002D171F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +38,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCDD3199275F4D61002D171F /* FirebaseAnalytics in Frameworks */,
+				CCDD319B275F4D61002D171F /* FirebaseAuth in Frameworks */,
+				CCDD319D275F4D61002D171F /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +66,7 @@
 		CCDD317D275F4B55002D171F /* ChatTAK */ = {
 			isa = PBXGroup;
 			children = (
+				CCDD3195275F4BEC002D171F /* GoogleService-Info.plist */,
 				CCDD317E275F4B55002D171F /* AppDelegate.swift */,
 				CCDD3180275F4B55002D171F /* SceneDelegate.swift */,
 				CCDD3182275F4B55002D171F /* ViewController.swift */,
@@ -86,6 +95,11 @@
 			dependencies = (
 			);
 			name = ChatTAK;
+			packageProductDependencies = (
+				CCDD3198275F4D61002D171F /* FirebaseAnalytics */,
+				CCDD319A275F4D61002D171F /* FirebaseAuth */,
+				CCDD319C275F4D61002D171F /* FirebaseFirestore */,
+			);
 			productName = ChatTAK;
 			productReference = CCDD317B275F4B55002D171F /* ChatTAK.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +128,9 @@
 				Base,
 			);
 			mainGroup = CCDD3172275F4B55002D171F;
+			packageReferences = (
+				CCDD3197275F4D61002D171F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = CCDD317C275F4B55002D171F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -129,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCDD318E275F4B56002D171F /* LaunchScreen.storyboard in Resources */,
+				CCDD3196275F4BEC002D171F /* GoogleService-Info.plist in Resources */,
 				CCDD318B275F4B56002D171F /* Assets.xcassets in Resources */,
 				CCDD3186275F4B55002D171F /* Main.storyboard in Resources */,
 			);
@@ -364,6 +382,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CCDD3197275F4D61002D171F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CCDD3198275F4D61002D171F /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CCDD3197275F4D61002D171F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		CCDD319A275F4D61002D171F /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CCDD3197275F4D61002D171F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		CCDD319C275F4D61002D171F /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CCDD3197275F4D61002D171F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		CCDD3187275F4B55002D171F /* ChatTAK.xcdatamodeld */ = {
