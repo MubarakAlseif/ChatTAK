@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CCB35B942760867B0086C47F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB35B932760867B0086C47F /* User.swift */; };
+		CCB35B962760AD1E0086C47F /* UserApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB35B952760AD1E0086C47F /* UserApi.swift */; };
 		CCDD317F275F4B55002D171F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDD317E275F4B55002D171F /* AppDelegate.swift */; };
 		CCDD3181275F4B55002D171F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDD3180275F4B55002D171F /* SceneDelegate.swift */; };
 		CCDD3183275F4B55002D171F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDD3182275F4B55002D171F /* ViewController.swift */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CCB35B932760867B0086C47F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CCB35B952760AD1E0086C47F /* UserApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApi.swift; sourceTree = "<group>"; };
 		CCDD317B275F4B55002D171F /* ChatTAK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatTAK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCDD317E275F4B55002D171F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCDD3180275F4B55002D171F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +51,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CCB35B92276086620086C47F /* MODEL */ = {
+			isa = PBXGroup;
+			children = (
+				CCB35B932760867B0086C47F /* User.swift */,
+				CCB35B952760AD1E0086C47F /* UserApi.swift */,
+			);
+			path = MODEL;
+			sourceTree = "<group>";
+		};
 		CCDD3172275F4B55002D171F = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +79,7 @@
 		CCDD317D275F4B55002D171F /* ChatTAK */ = {
 			isa = PBXGroup;
 			children = (
+				CCB35B92276086620086C47F /* MODEL */,
 				CCDD3195275F4BEC002D171F /* GoogleService-Info.plist */,
 				CCDD317E275F4B55002D171F /* AppDelegate.swift */,
 				CCDD3180275F4B55002D171F /* SceneDelegate.swift */,
@@ -162,6 +176,8 @@
 				CCDD3189275F4B55002D171F /* ChatTAK.xcdatamodeld in Sources */,
 				CCDD3183275F4B55002D171F /* ViewController.swift in Sources */,
 				CCDD317F275F4B55002D171F /* AppDelegate.swift in Sources */,
+				CCB35B962760AD1E0086C47F /* UserApi.swift in Sources */,
+				CCB35B942760867B0086C47F /* User.swift in Sources */,
 				CCDD3181275F4B55002D171F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
